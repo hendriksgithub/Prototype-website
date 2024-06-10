@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #9ECE7E;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .menu {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .menu-item > .dropdown-btn {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+    display: block;
+    transition: background 0.3s;
+  }
+  
+  .menu-item > .dropdown-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .submenu {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+  }
+  
+  .submenu.open {
+    display: block;
+  }
+  
+  .submenu-item {
+    padding: 5px 0;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #9ECE7E;
+    padding: 10px;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  
+  .profile-btn {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .profile-btn:hover {
+    background-color: #8BB46E;
+  }
+  
+  .building-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .building-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .building-profile img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .building-details h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+  }
+  
+  .building-details p {
+    margin: 5px 0;
+  }
+  
+  .heating-dashboard {
+    flex-grow: 1;
+  }
+  
+  .heating-dashboard h3 {
+    margin-top: 0;
+  }
+  
+  .heating-settings {
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .heating-settings h3 {
+    margin-top: 0;
+  }
+  
+  .heating-settings form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heating-settings label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .heating-settings input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+  
+  .heating-settings button {
+    background-color: #9ECE7E;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .heating-settings button:hover {
+    background-color: #8BB46E;
+  }
+  

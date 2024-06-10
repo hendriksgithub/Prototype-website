@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <nav class="menu">
+        <ul>
+          <li class="menu-item">
+            <button class="dropdown-btn">Building</button>
+            <ul class="submenu">
+              <li class="submenu-item">
+                <button class="dropdown-btn">Building 1</button>
+                <ul class="submenu">
+                  <li class="submenu-item">Floor 1
+                    <ul class="submenu">
+                      <li>Apartment 1</li>
+                      <li>Apartment 2</li>
+                    </ul>
+                  </li>
+                  <li class="submenu-item">Floor 2
+                    <ul class="submenu">
+                      <li>Apartment 3</li>
+                      <li>Apartment 4</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu-item">
+                <button class="dropdown-btn">Building 2</button>
+                <ul class="submenu">
+                  <li>Floor 1
+                    <ul class="submenu">
+                      <li>Apartment 1</li>
+                      <li>Apartment 2</li>
+                    </ul>
+                  </li>
+                  <li>Floor 2
+                    <ul class="submenu">
+                      <li>Apartment 3</li>
+                      <li>Apartment 4</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu-item">
+                <button class="dropdown-btn">Building 3</button>
+                <ul class="submenu open">
+                  <li class="submenu-item">Floor 1
+                    <ul class="submenu open">
+                      <li>Apartment 1</li>
+                      <li>Apartment 2</li>
+                    </ul>
+                  </li>
+                  <li class="submenu-item">Floor 2
+                    <ul class="submenu open">
+                      <li>Apartment 3</li>
+                      <li>Apartment 4</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <button class="profile-btn">User Profile</button>
+      </header>
+      <section class="building-info">
+        <div class="building-profile">
+          <img src="building.png" alt="Building">
+          <div class="building-details">
+            <h2>Building 3</h2>
+            <p>Address: 123 Main St, City, Country</p>
+            <p>Square Footage: 10,000 sq ft</p>
+            <p>Heating System: Central Heating</p>
+          </div>
+        </div>
+        <div class="heating-dashboard">
+          <h3>Current sensor data</h3>
+          <!-- <canvas id="heatingChart"></canvas> -->
+          <iframe style="background: #FFFFFF;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="1140" height="480" src="https://charts.mongodb.com/charts-project-0-xhtbyjd/embed/charts?id=6665e70c-3d37-4d2b-8ab5-d069053ac32f&maxDataAge=3600&theme=light&autoRefresh=true"></iframe>
+        </div>
+      </section>
+      <section class="heating-settings">
+        <h3>Set Heating Parameters</h3>
+        <form id="heatingForm">
+          <label for="temperature">Temperature:</label>
+          <input type="number" id="temperature" name="temperature" min="10" max="30"> °C<br>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time"><br>
+          <button type="submit">Set Parameters</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
